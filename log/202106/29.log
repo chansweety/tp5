@@ -1,0 +1,6 @@
+---------------------------------------------------------------
+[ 2021-06-29T22:33:36+08:00 ] 127.0.0.1 POST chan.cn/banner
+[运行时间：0.036747s] [吞吐率：27.21req/s] [内存消耗：2,469.34kb] [文件加载：38]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014559s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  (  `id` >= 1 ) [ RunTime:0.000403s ]

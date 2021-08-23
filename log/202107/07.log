@@ -1,0 +1,28 @@
+---------------------------------------------------------------
+[ 2021-07-07T21:46:52+08:00 ] 127.0.0.1 POST chan.cn/banner/v1
+[运行时间：0.229285s] [吞吐率：4.36req/s] [内存消耗：3,070.73kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020843s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.000974s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.053822s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.027805s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1) [ RunTime:0.000376s ]
+---------------------------------------------------------------
+[ 2021-07-07T21:48:43+08:00 ] 127.0.0.1 POST chan.cn/banner/v1
+[运行时间：0.033730s] [吞吐率：29.65req/s] [内存消耗：2,925.86kb] [文件加载：43]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011994s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[ 2021-07-07T21:49:19+08:00 ] 127.0.0.1 POST chan.cn/banner/v1
+[运行时间：0.039922s] [吞吐率：25.05req/s] [内存消耗：3,070.44kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014902s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1) [ RunTime:0.000318s ]

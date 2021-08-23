@@ -1,0 +1,16 @@
+---------------------------------------------------------------
+[ 2021-07-22T21:12:14+08:00 ] 127.0.0.1 POST chan.cn/token/v1/user
+[运行时间：0.731524s] [吞吐率：1.37req/s] [内存消耗：2,995.31kb] [文件加载：49]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.042630s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.039846s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'o8wK_5QUZ3iEVP6I8CZZeA_tAWu0' LIMIT 1 [ RunTime:0.000334s ]
+---------------------------------------------------------------
+[ 2021-07-22T21:50:56+08:00 ] 127.0.0.1 POST chan.cn/api/v1/order
+[运行时间：0.075114s] [吞吐率：13.31req/s] [内存消耗：3,388.69kb] [文件加载：59]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021775s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT * FROM `product` WHERE  `id` IN (1,3,5) [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `address` [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT * FROM `address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `order` [ RunTime:0.000596s ]
+[ sql ] [ SQL ] INSERT INTO `order` (`user_id` , `order_no` , `total_price` , `total_count` , `snap_name` , `snap_address` , `snap_items` , `create_time` , `update_time`) VALUES (1 , 'A7226185602307' , NULL , NULL , NULL , NULL , 'null' , '2021-07-22 21:50:56' , '2021-07-22 21:50:56') [ RunTime:0.000324s ]

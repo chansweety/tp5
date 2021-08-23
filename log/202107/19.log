@@ -1,0 +1,83 @@
+---------------------------------------------------------------
+[ 2021-07-19T16:50:18+08:00 ] 127.0.0.1 POST chan.cn/token/v1/user
+[运行时间：1.856086s] [吞吐率：0.54req/s] [内存消耗：2,957.07kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.130938s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.038301s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.028288s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`openid`) VALUES ('o8wK_5QUZ3iEVP6I8CZZeA_tAWu0') [ RunTime:0.093469s ]
+---------------------------------------------------------------
+[ 2021-07-19T16:50:38+08:00 ] 127.0.0.1 POST chan.cn/api/v1/address
+[运行时间：0.201461s] [吞吐率：4.96req/s] [内存消耗：3,046.92kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017978s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.007431s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.010111s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `address` [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SELECT * FROM `address` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] INSERT INTO `address` (`name` , `mobile` , `province` , `city` , `country` , `detail` , `user_id`) VALUES ('大帅比' , '17625494710' , '江苏' , '南京' , '雨花台区' , '东升山庄9栋二单元203室' , 2) [ RunTime:0.013745s ]
+---------------------------------------------------------------
+[ 2021-07-19T16:50:58+08:00 ] 127.0.0.1 POST chan.cn/api/v1/address
+[运行时间：0.129545s] [吞吐率：7.72req/s] [内存消耗：3,042.09kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021734s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `address` [ RunTime:0.001358s ]
+[ sql ] [ SQL ] SELECT * FROM `address` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.000809s ]
+[ sql ] [ SQL ] UPDATE `address`  SET `name`='小帅比'  WHERE  `id` = 1 [ RunTime:0.030752s ]
+---------------------------------------------------------------
+[ 2021-07-19T16:51:07+08:00 ] 127.0.0.1 POST chan.cn/api/v1/address
+[运行时间：0.042284s] [吞吐率：23.65req/s] [内存消耗：3,042.09kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012903s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `address` [ RunTime:0.005084s ]
+[ sql ] [ SQL ] SELECT * FROM `address` WHERE  `user_id` = 2 LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] UPDATE `address`  SET `name`='大帅比'  WHERE  `id` = 1 [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2021-07-19T17:01:01+08:00 ] 127.0.0.1 POST chan.cn/token/v1/user
+[运行时间：0.174640s] [吞吐率：5.73req/s] [内存消耗：2,957.05kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013436s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`openid`) VALUES ('o8wK_5QUZ3iEVP6I8CZZeA_tAWu0') [ RunTime:0.000237s ]
+---------------------------------------------------------------
+[ 2021-07-19T17:01:07+08:00 ] 127.0.0.1 POST chan.cn/api/v1/address
+[运行时间：0.060189s] [吞吐率：16.61req/s] [内存消耗：3,046.89kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025416s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `address` [ RunTime:0.004610s ]
+[ sql ] [ SQL ] SELECT * FROM `address` WHERE  `user_id` = 3 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] INSERT INTO `address` (`name` , `mobile` , `province` , `city` , `country` , `detail` , `user_id`) VALUES ('大帅比' , '17625494710' , '江苏' , '南京' , '雨花台区' , '东升山庄9栋二单元203室' , 3) [ RunTime:0.000287s ]
+---------------------------------------------------------------
+[ 2021-07-19T17:20:08+08:00 ] 127.0.0.1 POST chan.cn/token/v1/user
+[运行时间：0.198408s] [吞吐率：5.04req/s] [内存消耗：2,989.77kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016815s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001459s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'o8wK_5QUZ3iEVP6I8CZZeA_tAWu0' LIMIT 1 [ RunTime:0.000406s ]
+---------------------------------------------------------------
+[ 2021-07-19T17:20:13+08:00 ] 127.0.0.1 POST chan.cn/api/v1/address
+[运行时间：0.053949s] [吞吐率：18.54req/s] [内存消耗：3,046.89kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024103s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005694s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `address` [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT * FROM `address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] INSERT INTO `address` (`name` , `mobile` , `province` , `city` , `country` , `detail` , `user_id`) VALUES ('大帅比' , '17625494710' , '江苏' , '南京' , '雨花台区' , '东升山庄9栋二单元203室' , 1) [ RunTime:0.000261s ]
+---------------------------------------------------------------
+[ 2021-07-19T17:20:39+08:00 ] 127.0.0.1 POST chan.cn/api/v1/address
+[运行时间：0.049555s] [吞吐率：20.18req/s] [内存消耗：3,042.06kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024346s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `address` [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] UPDATE `address`  SET `name`='小帅比'  WHERE  `id` = 3 [ RunTime:0.000289s ]
+---------------------------------------------------------------
+[ 2021-07-19T17:20:48+08:00 ] 127.0.0.1 POST chan.cn/api/v1/address
+[运行时间：0.026081s] [吞吐率：38.34req/s] [内存消耗：3,042.06kb] [文件加载：51]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000767s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `address` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT * FROM `address` WHERE  `user_id` = 1 LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] UPDATE `address`  SET `name`='大帅比'  WHERE  `id` = 3 [ RunTime:0.000269s ]

@@ -1,0 +1,22 @@
+---------------------------------------------------------------
+[ 2021-07-06T21:18:46+08:00 ] 127.0.0.1 POST chan.cn/banner/v1
+[运行时间：0.433045s] [吞吐率：2.31req/s] [内存消耗：3,016.92kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019800s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.038657s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.025188s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.028414s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1) [ RunTime:0.000367s ]
+---------------------------------------------------------------
+[ 2021-07-06T21:52:03+08:00 ] 127.0.0.1 GET chan.cn/banner/v1?id=1
+[运行时间：0.029960s] [吞吐率：33.38req/s] [内存消耗：3,018.73kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001024s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `banner_id` = 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image` [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT * FROM `image` WHERE  `id` IN (1) [ RunTime:0.000221s ]

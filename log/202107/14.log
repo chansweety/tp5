@@ -1,0 +1,7 @@
+---------------------------------------------------------------
+[ 2021-07-14T22:41:16+08:00 ] 127.0.0.1 POST chan.cn/token/v1/user
+[运行时间：0.313243s] [吞吐率：3.19req/s] [内存消耗：2,944.84kb] [文件加载：48]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021599s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`openid`) VALUES ('o8wK_5QUZ3iEVP6I8CZZeA_tAWu0') [ RunTime:0.000353s ]

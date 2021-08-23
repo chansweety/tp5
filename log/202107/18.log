@@ -1,0 +1,77 @@
+---------------------------------------------------------------
+[ 2021-07-18T01:16:37+08:00 ] 127.0.0.1 GET chan.cn/api/v1/product
+[运行时间：0.256678s] [吞吐率：3.90req/s] [内存消耗：2,847.55kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018755s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT * FROM `product` [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_item` [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT * FROM `product_item` WHERE  `p_id` IN (1,2,3,4,5,6,7) [ RunTime:0.022944s ]
+[ sql ] [ SQL ] SELECT * FROM `product_item` WHERE  `p_id` IN (1,2,3,4,5,6,7) [ RunTime:0.015549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `p_item_equipment` [ RunTime:0.005339s ]
+[ sql ] [ SQL ] SELECT * FROM `p_item_equipment` WHERE  `p_item_id` IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16) [ RunTime:0.000431s ]
+---------------------------------------------------------------
+[ 2021-07-18T01:18:18+08:00 ] 127.0.0.1 GET chan.cn/api/v1/product
+[运行时间：0.088660s] [吞吐率：11.28req/s] [内存消耗：2,847.56kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013391s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `product` [ RunTime:0.000197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_item` [ RunTime:0.004461s ]
+[ sql ] [ SQL ] SELECT * FROM `product_item` WHERE  `p_id` IN (1,2,3,4,5,6,7) [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `product_item` WHERE  `p_id` IN (1,2,3,4,5,6,7) [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `p_item_equipment` [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT * FROM `p_item_equipment` WHERE  `p_item_id` IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16) [ RunTime:0.000332s ]
+---------------------------------------------------------------
+[ 2021-07-18T01:18:45+08:00 ] 127.0.0.1 GET chan.cn/api/v1/product
+[运行时间：0.045787s] [吞吐率：21.84req/s] [内存消耗：2,847.56kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012390s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.001249s ]
+[ sql ] [ SQL ] SELECT * FROM `product` [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_item` [ RunTime:0.005008s ]
+[ sql ] [ SQL ] SELECT * FROM `product_item` WHERE  `p_id` IN (1,2,3,4,5,6,7) [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `product_item` WHERE  `p_id` IN (1,2,3,4,5,6,7) [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `p_item_equipment` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT * FROM `p_item_equipment` WHERE  `p_item_id` IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16) [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2021-07-18T02:24:18+08:00 ] 127.0.0.1 GET chan.cn/api/v1/product
+[运行时间：0.083184s] [吞吐率：12.02req/s] [内存消耗：2,848.65kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010706s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT * FROM `product` [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_item` [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `product_item` WHERE  `p_id` IN (1,2,3,4,5,6,7) [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `product_item` WHERE  `p_id` IN (1,2,3,4,5,6,7) ORDER BY `p_id` DESC [ RunTime:0.042526s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `p_item_equipment` [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT * FROM `p_item_equipment` WHERE  `p_item_id` IN (15,16,13,14,11,12,9,10,7,8,4,5,6,1,2,3) [ RunTime:0.000295s ]
+---------------------------------------------------------------
+[ 2021-07-18T02:24:55+08:00 ] 127.0.0.1 GET chan.cn/api/v1/product
+[运行时间：0.039773s] [吞吐率：25.14req/s] [内存消耗：2,848.61kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014000s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `product` [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_item` [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT * FROM `product_item` WHERE  `p_id` IN (1,2,3,4,5,6,7) [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT * FROM `product_item` WHERE  `p_id` IN (1,2,3,4,5,6,7) ORDER BY `p_id` ASC [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `p_item_equipment` [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT * FROM `p_item_equipment` WHERE  `p_item_id` IN (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16) [ RunTime:0.000360s ]
+---------------------------------------------------------------
+[ 2021-07-18T02:25:06+08:00 ] 127.0.0.1 GET chan.cn/api/v1/product
+[运行时间：0.046737s] [吞吐率：21.40req/s] [内存消耗：2,848.64kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020051s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT * FROM `product` [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_item` [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `product_item` WHERE  `p_id` IN (1,2,3,4,5,6,7) [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `product_item` WHERE  `p_id` IN (1,2,3,4,5,6,7) ORDER BY `p_id` DESC [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `p_item_equipment` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT * FROM `p_item_equipment` WHERE  `p_item_id` IN (15,16,13,14,11,12,9,10,7,8,4,5,6,1,2,3) [ RunTime:0.000295s ]
+---------------------------------------------------------------
+[ 2021-07-18T21:39:17+08:00 ] 127.0.0.1 GET chan.cn/api/v1/product
+[运行时间：3.993070s] [吞吐率：0.25req/s] [内存消耗：2,849.22kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.100293s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product` [ RunTime:0.460353s ]
+[ sql ] [ SQL ] SELECT * FROM `product` [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `product_item` [ RunTime:0.134605s ]
+[ sql ] [ SQL ] SELECT * FROM `product_item` WHERE  `p_id` IN (1,2,3,4,5,6,7) [ RunTime:0.081400s ]
+[ sql ] [ SQL ] SELECT * FROM `product_item` WHERE  `p_id` IN (1,2,3,4,5,6,7) ORDER BY `p_id` DESC [ RunTime:0.025811s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `p_item_equipment` [ RunTime:0.153157s ]
+[ sql ] [ SQL ] SELECT * FROM `p_item_equipment` WHERE  `p_item_id` IN (15,16,13,14,11,12,9,10,7,8,4,5,6,1,2,3) [ RunTime:0.000409s ]
